@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <item android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+        app:showAsAction="ifRoom" />
+        <!-- //ifRoom: show item as icon if not enough room space inside options menu -->
+
+    <item android:id="@+id/action_compose"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Edit"
+        app:showAsAction="withText" />
+        <!-- //withText: show item as text inside options menu -->
+
+    <item android:id="@+id/action_call"
+        android:icon="@android:drawable/ic_menu_call"
+        android:title="Call"
+        app:showAsAction="withText|always" />
+        <!-- //withText|always: show icon only when no enough space else show icon + text -->
+
+    <item android:id="@+id/action_delete"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="Delete" />
+
+</menu>
